@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - BizConsult</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('images/register-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .container {
+      max-width: 600px;
+      margin: 100px auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Candidate Registration</h2>
+    <form action="#" method="post">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender">
+        <option>--Select--</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <label for="qualification">Qualification</label>
+      <input type="text" id="qualification" name="qualification" placeholder="e.g., BCA, B.Tech, MBA" required>
+
+      <label for="experience">Work Experience</label>
+      <input type="text" id="experience" name="experience" placeholder="e.g., 2 years in IT industry">
+
+      <label for="skills">Key Skills</label>
+      <textarea id="skills" name="skills" rows="4" placeholder="e.g., HTML, CSS, JavaScript, MySQL"></textarea>
+
+      <label for="resume">Upload Resume</label>
+      <input type="file" id="resume" name="resume">
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <form id="registerForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="text" id="job" placeholder="Job Title" required />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

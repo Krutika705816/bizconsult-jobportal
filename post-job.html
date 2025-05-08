@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post a Job - BizConsult</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('images/postjob-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.98);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    form input[type="file"] {
+      padding: 5px;
+    }
+
+    .btn-submit {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .btn-submit:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Post a Job</h2>
+    <form action="submit-job.php" method="post" enctype="multipart/form-data">
+      <label for="title">Job Title</label>
+      <input type="text" id="title" name="title" placeholder="e.g., Frontend Developer" required>
+
+      <label for="company">Company Name</label>
+      <input type="text" id="company" name="company" placeholder="e.g., TechPro Pvt Ltd" required>
+
+      <label for="location">Job Location</label>
+      <input type="text" id="location" name="location" placeholder="e.g., Bengaluru" required>
+
+      <label for="salary">Salary Range (in ₹)</label>
+      <input type="text" id="salary" name="salary" placeholder="e.g., 6-8 LPA" required>
+
+      <label for="experience">Experience Required</label>
+      <input type="text" id="experience" name="experience" placeholder="e.g., 2+ Years" required>
+
+      <label for="description">Job Description</label>
+      <textarea id="description" name="description" rows="6" placeholder="Write full job role and responsibilities..." required></textarea>
+
+      <label for="skills">Required Skills (comma-separated)</label>
+      <input type="text" id="skills" name="skills" placeholder="e.g., HTML, CSS, JavaScript, React">
+
+      <label for="jobImage">Upload Job Image</label>
+      <input type="file" id="jobImage" name="jobImage">
+
+      <button type="submit" class="btn-submit">Submit Job</button>
+    </form>
+  </div>
+
+</body>
+</html>

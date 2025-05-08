@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to BizConsult Job Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <h1>BizConsult</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="jobs.html">Jobs</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background: url('images/bg.jpg') center/cover; padding: 100px 20px; text-align: center; color: white;">
+    <h2>Your Career Starts Here</h2>
+    <p>Connecting thousands of job seekers with top employers every day</p>
+    <a href="register.html" class="btn">Register Now</a>
+  </section>
+
+  <!-- About Section -->
+  <section style="padding: 60px; background-color: #f9f9f9;">
+    <h2>About BizConsult</h2>
+    <div style="display: flex; gap: 40px; align-items: center;">
+      <img src="images/about.jpg" style="width: 45%; border-radius: 12px;">
+      <div style="flex: 1;">
+        <p>BizConsult is one of India’s top business consultancy and recruitment firms helping both freshers and experienced professionals find great opportunities. Our AI-matching algorithm connects the right talent with the right roles across various industries including IT, Finance, Marketing, and more.</p>
+        <ul>
+          <li>Over 500+ Companies Hiring</li>
+          <li>Daily Job Updates</li>
+          <li>Resume Building Support</li>
+          <li>Dedicated Career Advisors</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Jobs Section -->
+  <section style="padding: 60px;">
+    <h2>Featured Jobs</h2>
+    <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+      <div class="job-card" style="flex: 1; min-width: 300px;">
+        <img src="images/job1.jpg" style="width: 100%; border-radius: 10px;">
+        <h3>Frontend Developer</h3>
+        <p><strong>Company:</strong> TechZone</p>
+        <p><strong>Location:</strong> Noida</p>
+        <a href="job-detail.html">View Details</a>
+      </div>
+      <div class="job-card" style="flex: 1; min-width: 300px;">
+        <img src="images/job2.jpg" style="width: 100%; border-radius: 10px;">
+        <h3>Marketing Analyst</h3>
+        <p><strong>Company:</strong> MarketBuzz</p>
+        <p><strong>Location:</strong> Hyderabad</p>
+        <a href="job-detail.html">View Details</a>
+      </div>
+      <div class="job-card" style="flex: 1; min-width: 300px;">
+        <img src="images/job3.jpg" style="width: 100%; border-radius: 10px;">
+        <h3>Data Analyst</h3>
+        <p><strong>Company:</strong> DataCorp</p>
+        <p><strong>Location:</strong> Mumbai</p>
+        <a href="job-detail.html">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="padding: 30px; text-align: center; background-color: #333; color: white;">
+    &copy; 2025 BizConsult. All rights reserved.
+  </footer>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBas8rvTI9NCeIyVe_1kwK4BS_Fb-zf_jA",
+      authDomain: "bizconsultjobportal.firebaseapp.com",
+      projectId: "bizconsultjobportal",
+      storageBucket: "bizconsultjobportal.firebasestorage.app",
+      messagingSenderId: "280010306319",
+      appId: "1:280010306319:web:f05463d53e6a684389847a",
+      measurementId: "G-NTZQH69Z97"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+</html>
